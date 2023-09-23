@@ -1,0 +1,94 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
+}
+
+#testimonial{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2px 0px 50px 0px;
+  background-color: #d8dbdd25;
+}
+
+#testimonial > #main{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  padding: 2px 5px 2px 5px;
+}
+
+#testimonial #ctnbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#head{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#pic{
+  text-align: center;
+  margin-top: 5px;
+}
+
+#pic img{
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+.imgs{
+  display: inline;
+}
+
+.imgs img{
+  height: 30px;
+}
+
+#companies{
+  width: 90%;
+  margin: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width: 1000px) {
+  #companies{
+    flex-direction: column;
+    align-items: center;
+    column-gap: 10px;
+  }
+}
